@@ -1,0 +1,201 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+nav ul li:hover, nav ul li.active {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+body {
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+}
+
+.pink-text {
+  color:rgb(249,38,101);
+  font-weight:600;
+}
+
+.nav-highlight {
+  outline: 0;
+  color: rgb(249,38,101) !important;
+}
+
+.nav-outline {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.droid-serif {
+  font-family: "droid-serif";
+  font-style: italic;
+  font-size:18px;
+}
+
+.montserrat {
+  font-family: "Montserrat";
+}
+
+#background1 {
+  height:1000px;
+}
+
+
+
+.bold-600 {
+  font-weight:600;
+}
+
+.bold-800 {
+  font-weight:800;
+}
+
+.logo {
+  width: 62px;
+}
+
+.lighter {
+  font-weight:300;
+}
+
+.italic {
+  font-style: italic; 
+}
+
+.nav-role {
+  width:200px;
+  position:absolute;
+  top:-13px;
+  left: 72px;
+}
+
+.nav-name {
+  font-size:16px;
+}
+
+.nav-title-pink {
+  color:rgb(249,38,101);
+}
+
+.nav-title {
+  font-size:16px;
+  position:absolute;
+  top:22px;
+}
+
+.tech-icons {
+  max-width:300px;
+}
+
+#intro-banner {
+  margin-top:135px;
+}
+
+#intro-banner-arrow {
+  /*margin-top:500px;*/
+}
+
+p {
+  line-height: 2rem;
+}
+
+.profile-picture {
+  border:5px solid white;
+}
+
+.button-collapse {
+  color: rgb(249,38,101);
+}
+
+.parallax-container {
+  min-height: 960px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+#projects {
+  min-height:480px;
+}
+
+/*IPAD*/
+@media only screen and (max-width : 992px) {
+
+
+  #intro-banner {
+    margin-top:160px;
+  }
+
+  #intro-banner-arrow {
+    margin-top: 0px;
+  }
+
+  .nav-role {
+    opacity:0;
+  }
+
+  .parallax-container {
+    min-height:960px;
+  }
+  
+}
+
+/*MOBILE*/
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .logo {
+    width: 52px;
+  }
+
+  #intro-banner {
+    margin-top: 0;
+  }
+
+  .parallax-container .section {
+    position: absolute;
+    top: 0%;
+  }
+
+  .parallax-container{
+    min-height:590px;
+  }
+
+  .tech-icons {
+    width:32.66% !important;
+  }
+
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+  padding-top: 0px
+}
+
+.side-nav {
+  background-color:#424242 !important;
+}
+
+
+#contact-me-row {
+  max-width: 600px;
+  margin: auto;
+}
