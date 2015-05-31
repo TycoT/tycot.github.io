@@ -14,10 +14,6 @@
   <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -25,6 +21,7 @@
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Roboto+Slab|Montserrat' rel='stylesheet' type='text/css'>
+  <link href="css/lightbox.css" type="text/css" rel="stylesheet"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="grey lighten-2">
@@ -69,11 +66,11 @@
     <div id="introduction" class="section no-pad-bot scrollspy">
       <div id="intro-banner" class="container">
         <br><br>
-        <h1 class="header center nav-title-pink">Hello, my name is Ming!</h1>
+        <h1 class="header center nav-title-pink text-outline">Hello, my name is Ming!</h1>
         <br>
         <div class="row center">
-          <h5 class="header col s12 grey-text text-darken-3">I'm a software developer who loves solving problems.</h5>
-          <h6 class="header col s12 grey-text text-darken-3 droid-serif">If you have any interesting ideas, give me a shout</h6>
+          <h5 class="header col s12 white-text text-outline">I'm a software developer who loves solving problems.</h5>
+          <h6 class="header col s12 grey-text text-darken-3 droid-serif">If you have any interesting ideas, give me a <a href="#contact-me" class="nav-title-pink bold">shout</a></h6>
         </div>
         <div id="intro-banner-arrow" class="row center">
           <a href="#about-me">
@@ -139,8 +136,8 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h1 class="header center nav-title-pink">Projects That I've Worked On</h1>
-          <h5 class="header col s12 white-text">I love experimenting and hacking new technologies.</h5>
+          <h1 class="header center nav-title-pink text-outline">Projects That I've Worked On</h1>
+          <h5 class="header col s12 white-text text-outline">I love experimenting and hacking new technologies.</h5>
           <!--<h6 class="header col s12 grey-text text-darken-3 droid-serif">What are you doing here? Your not going to find the Divine Rapier here.</h6>-->
         </div>
       </div>
@@ -156,7 +153,7 @@
           <h3 class="nav-title-pink montserrat bold-600">PROJECTS</h3>
         </div>
         <div class="col s12 center">
-          <img class="col s2 tech-icons" src="images/HTML5-logo.png">
+          <img class="col s2 tech-icons" data-lightbox="tech" src="images/HTML5-logo.png">
           <img class="col s2 tech-icons" src="images/java-logo.png">
           <img class="col s2 tech-icons" src="images/angularjs-logo.png">
           <img class="col s2 tech-icons" src="images/ruby-on-rails-logo.png">
@@ -174,12 +171,21 @@
                 <img class="activator" src="images/pdsb1.png">
               </div>
               <div class="card-content grey darken-3">
-                <span class="card-title activator white-text">SLN<i class="mdi-navigation-more-vert right"></i></span>
+                <span class="card-title activator pink-text">Student Learning Notebook<i class="mdi-navigation-more-vert right"></i></span>
               </div>
               <div class="card-reveal grey darken-3 white-text">
-                <span class="card-title nav-title-pink">Student Learning Profile <i class="mdi-navigation-close right"></i></span>
-                <p>The Student Learning Profile is a project that I worked on during my co-op placement at the Peel District School Board. The application is used by teachers to capture and track thier student's progress and learning over a period of time.</p>
-                <p> The technologies I've implemented on this projects are as followed. Frontend: AngularJS, Angular Material, HighChartsJS, AJAX, JSON. Backend: JAVA SPRING MVC, SQL ORACLE.</p>
+                <span class="card-title pink-text">Student Learning Notebook <i class="mdi-navigation-close right"></i></span>
+                <p>The Student Learning Profile is a project that I worked on during my co-op placement at the Peel District School Board.</p>
+                <p>The application is used by teachers to capture and track thier student's progress and learning over a period of time.</p>
+                <div class="col s12 center mt mb">
+                  <a href="images/pdsb2.png" data-lightbox="sln" data-title="Student Learning Notebook"><img class="col s3 thumbnail" src="images/pdsb2.png"></a>
+                  <a href="images/pdsb3.png" data-lightbox="sln" data-title="Student Learning Notebook"><img class="col s3 thumbnail" src="images/pdsb3.png"></a>
+                  <a href="images/pdsb4.png" data-lightbox="sln" data-title="Student Learning Notebook"><img class="col s3 thumbnail" src="images/pdsb4.png"></a>
+                  <a href="images/pdsb5.png" data-lightbox="sln" data-title="Student Learning Notebook"><img class="col s3 thumbnail" src="images/pdsb5.png"></a>
+                </div>
+                <p>The technologies I've implemented on this projects are as followed. </p>
+                <p>Frontend: AngularJS, Angular Material, HighChartsJS, AJAX, JSON.</p>
+                <p>Backend: JAVA SPRING MVC, SQL ORACLE.</p>
               </div>
             </div>
           </div>
@@ -189,12 +195,20 @@
                 <img class="activator" src="images/upnote1.png">
               </div>
               <div class="card-content grey darken-3">
-                <span class="card-title activator white-text">Upnote<i class="mdi-navigation-more-vert right"></i></span>
+                <span class="card-title activator pink-text">Upnote<i class="mdi-navigation-more-vert right"></i></span>
               </div>
               <div class="card-reveal grey darken-3 white-text">
-                <span class="card-title nav-title-pink">Upnote<i class="mdi-navigation-close right"></i></span>
-                <p>Upnote is a project I tinkered around during my free time. I really wanted to explore the world of Ruby on Rails and decided to make an application out of this experience.</p>
-                <p>It is a bullet-driven journal or diary, that keeps track and organizes your daily activity using bullets. There are different bullet types for the type of activity you are tracking. E.g. a task will be a checkbox, an idea will be a light-bulb icon...etc.</p>
+                <span class="card-title pink-text">Upnote<i class="mdi-navigation-close right"></i></span>
+                <p>Upnote is a project I tinkered around during my free time.</p>
+                <p>I really wanted to explore the world of Ruby on Rails and decided to make an application out of this experience.</p>
+                <p>It is a bullet-driven journal or diary, that keeps track and organizes your daily activity using bullets. </p>
+                <p>There are different bullet types for the type of activity you are tracking. E.g. a task will be a checkbox, an idea will be a light-bulb icon...etc.</p>
+                <div class="col s12 center mt mb">
+                  <a href="images/upnote1.png" data-lightbox="upnote" data-title="Upnote"><img class="col s3 thumbnail-wide" src="images/upnote1.png"></a>
+                  <a href="images/upnote2.png" data-lightbox="upnote" data-title="Upnote"><img class="col s3 thumbnail-wide" src="images/upnote2.png"></a>
+                  <a href="images/upnote3.png" data-lightbox="upnote" data-title="Upnote"><img class="col s3 thumbnail-wide" src="images/upnote3.png"></a>
+                  <a href="images/upnote4.png" data-lightbox="upnote" data-title="Upnote"><img class="col s3 thumbnail-wide" src="images/upnote4.png"></a>
+                </div>
                 <p>The technologies I've utilize in this project are Ruby on Rails, Google Polymer, Jquery, and MySQL.</p>
               </div>
             </div>
@@ -203,14 +217,21 @@
         <div class="col s12 center">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/orbit1.png">
+              <img class="activator" src="images/orbit.png">
             </div>
             <div class="card-content grey darken-3">
-              <span class="card-title activator white-text">Orbit<i class="mdi-navigation-more-vert right"></i></span>
+              <span class="card-title activator pink-text">Orbit<i class="mdi-navigation-more-vert right"></i></span>
             </div>
             <div class="card-reveal grey darken-3 white-text">
-              <span class="card-title nav-title-pink">Orbit <i class="mdi-navigation-close right"></i></span>
-              <p>The goal of the game is to absorb other planets to complete each stage. If you are bigger than the other planets, your gravitational pull will drag them towards you, however if your are smaller than them, it works the opposite way!</p>
+              <span class="card-title pink-text">Orbit <i class="mdi-navigation-close right"></i></span>
+              <p>The goal of the game is to absorb other planets to complete each stage. </p>
+              <p>If you are bigger than the other planets, your gravitational pull will drag them towards you, however if your are smaller than them, it works the opposite way!</p>
+              <div class="col s12 center mt mb">
+                  <a href="images/orbit3.png" data-lightbox="orbit" data-title="Orbit"><img class="col s3 thumbnail-wide" src="images/orbit3.png"></a>
+                  <a href="images/orbit4.png" data-lightbox="orbit" data-title="Orbit"><img class="col s3 thumbnail-wide" src="images/orbit4.png"></a>
+                  <a href="images/orbit5.png" data-lightbox="orbit" data-title="Orbit"><img class="col s3 thumbnail-wide" src="images/orbit5.png"></a>
+                  <a href="images/orbit1.png" data-lightbox="orbit" data-title="Orbit"><img class="col s3 thumbnail-wide" src="images/orbit1.png"></a>
+              </div>
               <p>Orbit is a game 2D gravity physics game built using the UNITY 3D engine and coded C#.</p>
             </div>
           </div>
@@ -219,12 +240,19 @@
               <img class="activator" src="images/contagion.png">
             </div>
             <div class="card-content grey darken-3">
-              <span class="card-title activator white-text">Contagion<i class="mdi-navigation-more-vert right"></i></span>
+              <span class="card-title activator pink-text">Contagion<i class="mdi-navigation-more-vert right"></i></span>
             </div>
             <div class="card-reveal grey darken-3 white-text">
-              <span class="card-title nav-title-pink">Contagion<i class="mdi-navigation-close right"></i></span>
-              <p>Growing up playing alot of MUDs in the 1990s, I was inspired to create a short text-based game called "Contagion". Text-based games usually start with the character in some room and they have to find thier way through navigating to different rooms and interacting with objects by text commands. </p>
-              <p>Contagion was written in C++</p>
+              <span class="card-title pink-text">Contagion<i class="mdi-navigation-close right"></i></span>
+              <p>Growing up playing alot of MUDs in the 1990s, I was inspired to create a short text-based game called "Contagion". </p>
+              <p>Text-based games usually start with the character in some room and they have to find thier way through navigating to different rooms and interacting with objects by text commands. </p>
+              <div class="col s12 center mt mb">
+                  <a href="images/contagion.png" data-lightbox="contagion" data-title="Contagion"><img class="col s3 thumbnail" src="images/contagion.png"></a>
+                  <a href="images/contagion2.png" data-lightbox="contagion" data-title="Contagion"><img class="col s3 thumbnail" src="images/contagion2.png"></a>
+                  <a href="images/contagion3.png" data-lightbox="contagion" data-title="Contagion"><img class="col s3 thumbnail" src="images/contagion3.png"></a>
+                  <a href="images/contagion4.png" data-lightbox="contagion" data-title="Contagion"><img class="col s3 thumbnail" src="images/contagion4.png"></a>
+              </div>
+              <p>Contagion was written in C.</p>
             </div>
           </div>
         </div>
@@ -281,6 +309,7 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="js/lightbox.min.js"></script>
   <script src="js/init.js"></script>
 
   </body>
