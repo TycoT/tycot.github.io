@@ -156,6 +156,16 @@ p {
   .parallax-container {
     min-height:960px;
   }
+
+  .thumbnail {
+    width:49.66% !important; 
+    margin-bottom: 10px;
+  }
+
+  .thumbnail-wide {
+    width:49.66% !important; 
+    margin-bottom:10px;
+  }
   
 }
 
@@ -184,6 +194,16 @@ p {
 
   .tech-icons {
     width:32.66% !important;
+  }
+
+  .thumbnail {
+    width:100% !important; 
+    margin-bottom:10px;
+  }
+
+  .thumbnail-wide {
+    width:100% !important; 
+    margin-bottom:10px;
   }
 
 }
