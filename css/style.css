@@ -230,11 +230,11 @@ footer.page-footer {
 
 
 .thumbnail {
-  height:230px;
+  height:100%;
 }
 
 .thumbnail-wide {
-  height:180px;
+  height:100%;
 }
 
 .mt {
